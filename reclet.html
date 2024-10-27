@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Letters</title>
+    <style>
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tab {
+            flex: 1 1 calc(33.333% - 10px);
+            box-sizing: border-box;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+        }
+        .tab:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommendation Letters</h1>
+    <div class="tabs">
+        <div class="tab" onclick="window.location.href='./assets/reclets/Talkmeup.pdf'">
+            <h2>Website Developer</h2>
+            <p>Intern at AI platform Talkmeup Ink.</p>
+        </div>
+        <div class="tab" onclick="window.location.href='./assets/reclets/CMU.pdf'">
+            <h2>Game Design</h2>
+            <p>Carneige Mellon</p>
+        </div>
+        
+    </div>
+</body>
+</html>
