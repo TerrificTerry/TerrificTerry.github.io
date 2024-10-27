@@ -12,11 +12,9 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            overflow: visible; /* Ensure content isn’t clipped */
         }
         .container {
             padding: 20px;
-            min-height: 100vh; /* Full viewport height */
         }
         .tabs {
             display: flex;
@@ -25,19 +23,20 @@
             justify-content: center;
         }
         .tab {
-            flex: 1 1 300px;
-            max-width: 300px;
+            flex: 1 1 calc(33.333% - 20px);
             box-sizing: border-box;
             padding: 20px;
             border: 1px solid #ccc;
             text-align: center;
             cursor: pointer;
             background-color: #fff;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, box-shadow 0.3s;
             margin: 10px;
+            border-radius: 8px;
         }
         .tab:hover {
             background-color: #e0f7fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .tab h2 {
             font-size: 1.5em;
@@ -53,14 +52,13 @@
             padding: 20px;
             text-align: center;
         }
-    </style>    
-    
+    </style>
 </head>
 <body>
     <div class="header">
         <h1>Recommendation Letters</h1>
     </div>
-    <div class="container", style="overflow:visible;">
+    <div class="container" style="overflow:visible;">
         <div class="tabs">
             <div class="tab" onclick="window.location.href='./assets/reclets/Talkmeup.pdf'">
                 <h2>Website Developer</h2>
@@ -70,10 +68,10 @@
                 <h2>Game Design</h2>
                 <p>Carnegie Mellon</p>
             </div>
-            <!-- <div class="tab" onclick="window.location.href='./assets/reclets/Another.pdf'">
+            <div class="tab" onclick="window.location.href='./assets/reclets/Another.pdf'">
                 <h2>Another Title</h2>
                 <p>Another Subtitle</p>
-            </div> -->
+            </div>
             <!-- Add more tabs as needed -->
         </div>
     </div>
