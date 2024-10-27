@@ -10,15 +10,20 @@
         body {
             background-color: #f5f5f5;
             font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
         }
         .tabs {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin: 20px;
+            justify-content: center;
         }
         .tab {
-            flex: 1 1 calc(33.333% - 10px);
+            flex: 1 1 calc(33.333% - 20px);
             box-sizing: border-box;
             padding: 20px;
             border: 1px solid #ccc;
@@ -26,6 +31,7 @@
             cursor: pointer;
             background-color: #fff;
             transition: background-color 0.3s;
+            margin: 10px;
         }
         .tab:hover {
             background-color: #e0f7fa;
@@ -50,20 +56,22 @@
     <div class="header">
         <h1>Recommendation Letters</h1>
     </div>
-    <div class="tabs">
-        <div class="tab" onclick="window.location.href='./assets/reclets/Talkmeup.pdf'">
-            <h2>Website Developer</h2>
-            <p>Intern at AI platform Talkmeup Ink.</p>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab" onclick="window.location.href='./assets/reclets/Talkmeup.pdf'">
+                <h2>Website Developer</h2>
+                <p>Intern at AI platform Talkmeup Ink.</p>
+            </div>
+            <div class="tab" onclick="window.location.href='./assets/reclets/CMU.pdf'">
+                <h2>Game Design</h2>
+                <p>Carnegie Mellon</p>
+            </div>
+            <!-- <div class="tab" onclick="window.location.href='./assets/reclets/Another.pdf'">
+                <h2>Another Title</h2>
+                <p>Another Subtitle</p>
+            </div> -->
+            <!-- Add more tabs as needed -->
         </div>
-        <div class="tab" onclick="window.location.href='./assets/reclets/CMU.pdf'">
-            <h2>Game Design</h2>
-            <p>Carnegie Mellon</p>
-        </div>
-        <div class="tab" onclick="window.location.href='./assets/reclets/Another.pdf'">
-            <h2>Another Title</h2>
-            <p>Another Subtitle</p>
-        </div>
-        <!-- Add more tabs as needed -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
