@@ -23,7 +23,8 @@
             justify-content: center;
         }
         .tab {
-            flex: 1 1 calc(33.333% - 20px);
+            flex: 1 1 300px; /* Set a minimum width for each tab */
+            max-width: 300px; /* Set a maximum width for each tab */
             box-sizing: border-box;
             padding: 20px;
             border: 1px solid #ccc;
@@ -32,8 +33,6 @@
             background-color: #fff;
             transition: background-color 0.3s;
             margin: 10px;
-            height: auto;
-            width: auto;
         }
         .tab:hover {
             background-color: #e0f7fa;
@@ -53,6 +52,7 @@
             text-align: center;
         }
     </style>
+    
 </head>
 <body>
     <div class="header">
