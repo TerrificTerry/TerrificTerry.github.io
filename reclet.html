@@ -12,9 +12,11 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            overflow: visible; /* Ensure content isn’t clipped */
         }
         .container {
             padding: 20px;
+            min-height: 100vh; /* Full viewport height */
         }
         .tabs {
             display: flex;
@@ -23,8 +25,8 @@
             justify-content: center;
         }
         .tab {
-            flex: 1 1 300px; /* Set a minimum width for each tab */
-            max-width: 300px; /* Set a maximum width for each tab */
+            flex: 1 1 300px;
+            max-width: 300px;
             box-sizing: border-box;
             padding: 20px;
             border: 1px solid #ccc;
@@ -51,7 +53,7 @@
             padding: 20px;
             text-align: center;
         }
-    </style>
+    </style>    
     
 </head>
 <body>
