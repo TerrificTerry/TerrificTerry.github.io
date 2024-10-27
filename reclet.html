@@ -4,72 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recommendation Letters</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .container {
-            padding: 20px;
+        h1 {
+            color: #333;
+            margin-top: 20px;
         }
         .tabs {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
         }
         .tab {
-            flex: 1 1 calc(33.333% - 20px);
-            box-sizing: border-box;
-            padding: 20px;
-            border: 1px solid #ccc;
-            text-align: center;
-            cursor: pointer;
             background-color: #fff;
-            transition: background-color 0.3s;
-            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
         }
         .tab:hover {
-            background-color: #e0f7fa;
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
         }
         .tab h2 {
-            font-size: 1.5em;
-            color: #00796b;
+            margin: 0 0 10px;
+            color: #0073e6;
         }
         .tab p {
-            font-size: 1em;
-            color: #004d40;
-        }
-        .header {
-            background-color: #004d40;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+            margin: 0;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Recommendation Letters</h1>
-    </div>
-    <div class="container">
-        <div class="tabs">
-            <div class="tab" onclick="window.location.href='./assets/reclets/Talkmeup.pdf'">
-                <h2>Website Developer</h2>
-                <p>Intern at AI platform Talkmeup Ink.</p>
-            </div>
-            <div class="tab" onclick="window.location.href='./assets/reclets/CMU.pdf'">
-                <h2>Game Design</h2>
-                <p>Carnegie Mellon</p>
-            </div>
-            
-            <!-- Add more tabs as needed -->
+    <h1>Recommendation Letters</h1>
+    <div class="tabs">
+        <div class="tab" onclick="window.location.href='./assets/reclets/Talkmeup.pdf'">
+            <h2>Website Developer</h2>
+            <p>Intern at AI platform Talkmeup Ink.</p>
+        </div>
+        <div class="tab" onclick="window.location.href='./assets/reclets/CMU.pdf'">
+            <h2>Game Design</h2>
+            <p>Carnegie Mellon</p>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
